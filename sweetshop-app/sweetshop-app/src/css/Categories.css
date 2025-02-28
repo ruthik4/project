@@ -1,0 +1,81 @@
+/* Contactus.css */
+
+/* New background color for the entire div */
+.contact-page {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff; /* White background for contact container */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-left: 300px;
+}
+
+.contact-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.contact-list i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.contact-list strong {
+  margin-right: 5px;
+  color: #333;
+}
+
+.contact-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  margin-top: 20px;
+}
+
+.footer-content p {
+  font-size: 14px;
+  color: #999;
+}

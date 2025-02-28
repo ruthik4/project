@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Product } from '../interfaces/Product';
 import Navbar from '../components/Navbar';

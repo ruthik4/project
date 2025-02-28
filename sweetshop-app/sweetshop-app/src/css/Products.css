@@ -1,186 +1,191 @@
 /* General Styles */
 body, html {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-  
-  /* Navbar Spacing */
-  .products-section {
-    padding-top: 0; /* Adjust if needed */
-  }
-  
-  /* Container */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px; /* Horizontal padding for consistent spacing */
-  }
-  
-  /* Loading Icon Centering */
-  .loadingicon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding-left: 500px;
-  }
-  
-  /* Row */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  
-  /* Column */
-  .col-12, .col-md-6, .col-lg-4 {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 30px;
-  }
-  
-  @media (min-width: 992px) {
-    .col-lg-4 {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Navbar Spacing */
+.products-section {
+  padding-top: 0; /* Adjust if needed */
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /* Horizontal padding for consistent spacing */
+}
+
+/* Loading Icon Centering */
+.loadingicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-left: 500px;
+}
+
+/* Row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* Column */
+.col-12, .col-md-6, .col-lg-4 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
       flex: 0 0 31.333%;
       max-width: 31.333%;
-    }
   }
-  
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    .col-md-6 {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .col-md-6 {
       flex: 0 0 48%;
       max-width: 48%;
-    }
   }
-  
-  @media (max-width: 767.98px) {
-    .col-12 {
+}
+
+@media (max-width: 767.98px) {
+  .col-12 {
       flex: 0 0 100%;
       max-width: 100%;
-    }
   }
-  
-  /* Adjust Left and Right Margins for First and Last Columns */
-  .row .col-12:first-child,
-  .row .col-md-6:first-child,
-  .row .col-lg-4:first-child {
-    margin-left: 0;
-  }
-  
-  .row .col-12:last-child,
-  .row .col-md-6:last-child,
-  .row .col-lg-4:last-child {
-    margin-right: 0;
-  }
-  
-  /* Card */
-  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card-img-top {
-    width: 100%;
-    height: 200px; /* Set a consistent height */
-    object-fit: cover;
-  }
-  
-  .card-body {
-    padding: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card-title {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-  }
-  
-  .card-text {
-    font-size: 1em;
-    margin-bottom: 1em;
-  }
-  
-  .card-price {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: auto;
-    margin-bottom: 1em;
-  }
-  
-  /* Quantity Container */
-  .quantity-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .quantity-input {
-    width: 60px;
-    padding: 5px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  /* Button */
-  .btn-primary {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .footer-content {
-    text-align: center;
-  }
-  
-  .footer-content p {
-    margin: 0;
-  }
-  
-  .footer-content .social-icons {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-content .social-icons li {
-    margin: 0 10px;
-  }
-  
-  .footer-content .social-icons a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-content .social-icons a:hover {
-    text-decoration: underline;
-  }
-  
+}
+
+/* Adjust Left and Right Margins for First and Last Columns */
+.row .col-12:first-child,
+.row .col-md-6:first-child,
+.row .col-lg-4:first-child {
+  margin-left: 0;
+}
+
+.row .col-12:last-child,
+.row .col-md-6:last-child,
+.row .col-lg-4:last-child {
+  margin-right: 0;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Maximize effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Set a consistent height */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.card-text {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.card-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: 1em;
+}
+
+/* Quantity Container */
+.quantity-container {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-input {
+  width: 60px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Button */
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content .social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content .social-icons li {
+  margin: 0 10px;
+}
+
+.footer-content .social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content .social-icons a:hover {
+  text-decoration: underline;
+}
