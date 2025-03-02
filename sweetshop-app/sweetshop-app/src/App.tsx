@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Products from './components/Products';
 import Contactus from './components/Contactus';
 import Categories from './components/Categories';
+import Cart from './components/Cart';
+import Profile from './components/Profile';
 
 
 export default function App() {
@@ -17,6 +19,9 @@ export default function App() {
         <Route element={<Products/>} path="/products"/>
         <Route element={<Contactus/>} path="/contactus"/>
         <Route element={<Categories/>} path="/categories"/>
+        <Route element={<Cart/>} path="/cart"/>
+        <Route element={<Profile/>} path="/profile"/>
+    
         
 
 
@@ -26,6 +31,9 @@ export default function App() {
       
       
       </BrowserRouter>
+
+
+      
 
 
 

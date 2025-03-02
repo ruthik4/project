@@ -1,12 +1,13 @@
-
 import React, { useState, useEffect } from 'react';
 import { Product } from '../interfaces/Product';
 import Navbar from '../components/Navbar';
 import '../css/Products.css';
+import Cart from './Cart';
 
 export default function Products() {
   const [products, setProducts] = useState<Product[]>([]);
   const [quantities, setQuantities] = useState<{ [key: string]: number }>({});
+  const [cart, setCart] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -47,7 +48,10 @@ export default function Products() {
 
   const handleAddToCart = (product: Product) => {
     const quantity = quantities[product.productname];
-    // Add your add-to-cart logic here
+    setCart(prevCart => [
+      ...prevCart,
+      { ...product, quantity }
+    ]);
     console.log(`Added ${quantity} of ${product.productname} to cart.`);
   };
 
@@ -71,7 +75,7 @@ export default function Products() {
     <div className="d-flex flex-column min-vh-100">
       <Navbar />
       <div className="products-section flex-grow-1">
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <div className="container py-5">
           <div className="row justify-content-center">
             {products.map(product => (
@@ -115,6 +119,8 @@ export default function Products() {
           </div>
         </div>
       </div>
+
+      <Cart cart={cart} />
 
       {/* Footer */}
       <footer>
