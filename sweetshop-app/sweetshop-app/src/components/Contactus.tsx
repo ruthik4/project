@@ -23,7 +23,7 @@ export default function Contact() {
             <li><a href="Navbar">Home</a></li>
             <li><a href="Products">Shop</a></li>
             <li><a href="Categories">Categories</a></li>
-            <li><a href="Cart">Cart</a></li>
+           
             
             <li><a href="Profile">Profile</a></li>
             <li><a href="/" onClick={handleLogout}>Logout</a></li>

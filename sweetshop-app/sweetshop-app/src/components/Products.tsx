@@ -11,6 +11,17 @@ export default function Products() {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
+
+
+
+
+  const handleLogout = (event) => {
+    event.preventDefault(); // Prevent the default anchor behavior
+    if (window.confirm('Are you sure you want to log out?')) {
+      window.location.href = '/'; // Redirect to the logout URL
+    }
+  };
+
   useEffect(() => {
     fetch('http://localhost:8080/api/products')
       .then(response => {
@@ -72,8 +83,38 @@ export default function Products() {
   }
 
   return (
+
+
+
+
+
+
+
+
+
+
+
     <div className="d-flex flex-column min-vh-100">
-      <Navbar />
+
+
+
+<header>
+        <nav>
+          <ul>
+             
+            <li><a href="Navbar">Home</a></li>
+            <li><a href="Products">Shop</a></li>
+            <li><a href="Categories">Categories</a></li>
+            <li><a href="#">Cart</a></li>
+            
+            <li><a href="Profile">Profile</a></li>
+            <li><a href="/" onClick={handleLogout}>Logout</a></li>
+            <li><a href="Contactus">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      
       <div className="products-section flex-grow-1">
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <div className="container py-5">
