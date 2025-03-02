@@ -4,6 +4,10 @@ body {
     background-color: #f8f9fa;
   }
 
+  .mydiv {
+    margin-left: 500px;
+  }
+
   .card {
     width: 18rem;
     border: 1px solid #dee2e6;
@@ -14,6 +18,7 @@ body {
   .card-img-top {
     width: 100%;
     height: auto;
+    padding-left: 200px;
   }
   .card-title {
     text-align: center;

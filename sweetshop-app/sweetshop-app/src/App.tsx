@@ -7,6 +7,7 @@ import Contactus from './components/Contactus';
 import Categories from './components/Categories';
 import Cart from './components/Cart';
 import Profile from './components/Profile';
+import Orderplaced from './components/Orderplaced';
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <Route element={<Products/>} path="/products"/>
         <Route element={<Contactus/>} path="/contactus"/>
         <Route element={<Categories/>} path="/categories"/>
+        <Route element={<Orderplaced/>} path="/orderplaced"/>
         
         <Route element={<Profile/>} path="/profile"/>
     

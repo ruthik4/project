@@ -24,9 +24,10 @@ const Profile: React.FC = () => {
           </ul>
         </nav>
       </header>
+      <br/><br/><br/>
 
 
-
+       <div className="mydiv" style={{ paddingLeft: 450 }}>
       <div className="card">
   <img src="https://preview.redd.it/instagram-default-user-profile-pic-flip-flops-v0-g983oflfeg4d1.jpg?width=262&format=pjpg&auto=webp&s=c6ec2305199c633fc6d460238d0409f41812fe75" className="card-img-top" alt="Profile Photo" />
   <div className="card-body">
@@ -41,6 +42,7 @@ const Profile: React.FC = () => {
     </li>
   </ul>
   <button onClick={handleLogout}>Logout</button>
+</div>
 </div>
 
 
